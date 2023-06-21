@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width,initial-scale=1.0" name="viewport">
+		<title>DISCoTek</title>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<section class="head">
+			<div class="topBar">
+				<img class="logo" src="assets/logo.svg" alt="DISCOTEK">
+			</div>
+			<div class="centerBar">
+				<div class="leftCenter">
+					<h1 class="bigTitle">Your digital toolbox, work smarter not harder.</h1>
+					<p class="smallTitle">DISCoTek is a website which provides hundreds of resources from all over the web from productivity tools to the latest AI.</p>
+					<p class="smallTitle">Ran by DISC, a specialist college in Manchester for 16 - 25 year olds, which allows young people to progress their career in the digital sector.</p>
+					<div class="buttonBar">
+						<a class="pageButton" href="#categories" type="button">Explore</a>
+						<a class="pageButton" href="#featured" type="button">Featured</a>
+					</div>
+				</div>
+				<div class="rightCenter">
+					<div class="ball"></div>
+					<div class="statBar">
+						<div class="stat">
+							<p class="statTop">100+</p>
+							<p class="statBot">Resources</p>
+						</div>
+						<div class="stat">
+							<p class="statTop">20+</p>
+							<p class="statBot">Categories</p>
+						</div>
+						<div class="stat">
+							<p class="statTop">Unlimited</p>
+							<p class="statBot">Possibilities</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottomBar">
+				<a href="#featured"><img class="scroll" src="assets/scroll.png" alt="Scroll Button"></a>
+			</div>
+		</section>
+		<section class="featured" id="featured">
+			<div class="leftFeatured" id="leftFeatured">
+				<img class="slider" src="assets/slider.png" alt="">
+				<div class="overImage"></div>
+				<div class="leftFeaturedText">
+					<h3 class="cardName">Generative Fill</h3>
+					<p class="cardDesc">Use Adobe’s new AI tool to change, remove or fill any object from an image in seconds!</p>
+					<a class="cardButton" href="https://firefly.adobe.com/" target="_blank">Try it now</a>
+				</div>
+			</div>
+			<div class="rightFeatured">
+				<div class="topFeatured">
+					<h3 class="cardName">Text to Image Generation</h3>
+					<p class="cardDesc">Use Adobe’s new AI tool to create images from text in seconds, turn your imagination into real life!</p>
+					<a class="cardButton" href="https://firefly.adobe.com/" target="_blank">Try it now</a>
+				</div>
+				<div class="bottomFeatured">
+					<h3 class="cardName">Text Effects</h3>
+					<p class="cardDesc">Use Adobe’s new AI tool to apply styles or textures onto text with custom prompts!</p>
+					<a class="cardButton" href="https://firefly.adobe.com/" target="_blank">Try it now</a>
+				</div>
+			</div>
+		</section>
+		<section class="main">
+			<h2 class="sub marginfit center" id="categories">EXPLORE</h2>
+			<section class="categories">
+				<div class="catList">
+					<div class="catColumn">
+						<a class="catName center" href="#categories" id="Accessibility" onclick="categoryHandler('Accessibility')">Accessibility</a>
+						<a class="catName center" href="#categories" id="AI" onclick="categoryHandler('AI')">AI</a>
+						<a class="catName center" href="#categories" id="Animation" onclick="categoryHandler('Animation')">Animation</a>
+						<a class="catName center" href="#categories" id="Audio" onclick="categoryHandler('Audio')">Audio</a>
+						<a class="catName center" href="#categories" id="Blogging" onclick="categoryHandler('Blogging')">Blogging</a>
+						<a class="catName center" href="#categories" id="Colour" onclick="categoryHandler('Colour')">Colour</a>
+					</div>
+					<div class="catColumn">
+						<a class="catName center" href="#categories" id="Collaboration" onclick="categoryHandler('Collaboration')">Collaboration</a>
+						<a class="catName center" href="#categories" id="Design" onclick="categoryHandler('Design')">Design</a>
+						<a class="catName center" href="#categories" id="Development" onclick="categoryHandler('Development')">Development</a>
+						<a class="catName center" href="#categories" id="Editing" onclick="categoryHandler('Editing')">Editing</a>
+						<a class="catName center" href="#categories" id="Educational" onclick="categoryHandler('Educational')">Educational</a>
+						<a class="catName center" href="#categories" id="Fonts" onclick="categoryHandler('Fonts')">Fonts</a>
+					</div>
+					<div class="catColumn">
+						<a class="catName center" href="#categories" id="Illustration" onclick="categoryHandler('Illustration')">Illustration</a>
+						<a class="catName center" href="#categories" id="Inspiration" onclick="categoryHandler('Inspiration')">Inspiration</a>
+						<a class="catName center" href="#categories" id="Icons" onclick="categoryHandler('Icons')">Icons</a>
+						<a class="catName center" href="#categories" id="Jobs" onclick="categoryHandler('Jobs')">Jobs</a>
+						<a class="catName center" href="#categories" id="Miscellaneous" onclick="categoryHandler('Miscellaneous')">Miscellaneous</a>
+						<a class="catName center" href="#categories" id="Podcasting" onclick="categoryHandler('Podcasting')">Podcasting</a>
+					</div>
+					<div class="catColumn">
+						<a class="catName center" href="#categories" id="Productivity" onclick="categoryHandler('Productivity')">Productivity</a>
+						<a class="catName center" href="#categories" id="Stock Images" onclick="categoryHandler('Stock Images')">Stock Images</a>
+						<a class="catName center" href="#categories" id="Stock Videos" onclick="categoryHandler('Stock Videos')">Stock Videos</a>
+						<a class="catName center" href="#categories" id="Free" onclick="categoryHandler('Free')">Free</a>
+						<a class="catName center" href="#categories" id="Free Trial" onclick="categoryHandler('Free Trial')">Free Trial</a>
+						<a class="catName center" href="#categories" id="Paid" onclick="categoryHandler('Paid')">Paid</a>
+					</div>
+				</div>
+			</section>
+			<div class="mainBelt">
+				<a class="card" id="ref" style="display: none;" href="https://shortcuts.design/" target="_blank">
+					<div class="cardHead" style="background: url(https://i.imgur.com/cWLKfBx.png) center; background-size: cover;"></div>
+					<h3 class="cardTitle center">Shortcuts.design</h3>
+					<p class="cardText">Shortcuts.design is a hub for a variety of programs, showcasing all the shortcuts of each one, the most basic to the most advanced all in one place.</p>
+				</a>
+			</div>
+		</section>
+		<footer>
+			<div class="leftFooter"></div>
+			<div class="centerFooter">Copyright Digital Advantage, All rights reserved.</div>
+			<div class="rightFooter"></div>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>

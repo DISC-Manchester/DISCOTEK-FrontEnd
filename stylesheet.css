@@ -1,0 +1,520 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+/* HTML Elements */
+
+html {
+	scroll-behavior: smooth;
+	text-decoration: none;
+}
+
+body {
+	scroll-behavior: smooth;
+	overflow: overlay;
+	overflow-x: hidden;
+	font-family: "Nunito Sans";
+	margin: 0;
+	padding: 0;
+	background: #141414;
+	color: #F0F0F0;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 64px;
+	background: #2B2B2B;
+	height: 100px;
+	width: 100vw;
+}
+
+/* Webkit */
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px;
+	border-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/* Inline */
+
+.transition {
+	transition: 0.25s;
+}
+
+.margin5 {
+	margin: 0 0 0 5vw;
+}
+
+.marginfit {
+	margin: 32px 0 32px 0;
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+/* Classes */
+
+.head {
+	height: 90vh;
+	width: 90vw;
+	margin: 5vh 5vw;
+}
+
+.topBar {
+	height: 10vh;
+	width: 90vw;
+}
+
+.centerBar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 70vh;
+	width: 90vw;
+}
+
+.leftCenter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 70vh;
+	width: 40vw;
+}
+
+.bigTitle {
+	width: 30vw;
+	font-size: 56px;
+	margin: 0 0 25px 0;
+}
+
+.smallTitle {
+	width: 30vw;
+	font-size: 24px;
+	margin: 0 0 25px 0;
+}
+
+.buttonBar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 100px;
+	width: 300px;
+}
+
+.pageButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #F0F0F0;
+	border-radius: 10px;
+	border-color: transparent;
+	height: 50px;
+	width: 125px;
+	color: black;
+}
+
+.rightCenter {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 70vh;
+	width: 40vw;
+}
+
+.ball {
+	background: url(assets/ball.gif);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 45vh;
+	width: 60vh;
+}
+
+.statBar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	width: 60vh;
+}
+
+.stat {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.statTop {
+	font-size: 32px;
+	margin: 0;
+}
+
+.statBot {
+	font-size: 20px;
+	margin: 0;
+}
+
+.bottomBar {
+	display: flex;
+	justify-content: center;
+	height: 10vh;
+	width: 90vw;
+}
+
+.scroll {
+	scroll-behavior: smooth;
+	height: 50px;
+	width: 50px;
+}
+
+.featured {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 90vh;
+	width: 90vw;
+	margin: 5vh 5vw;
+}
+
+.leftFeatured {
+	z-index: 2;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: flex-start;
+	background: url(assets/1.png);
+	background-size: cover;
+	background-position: center;
+	border-radius: 15px;
+	border-color: transparent;
+	height: 90vh;
+	width: 44vw;
+}
+
+.leftFeaturedText {
+	position: absolute;
+	bottom: 0;
+}
+
+.rightFeatured {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 90vh;
+	width: 44vw;
+}
+
+.topFeatured {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background: url(assets/3.png);
+	background-size: cover;
+	border-radius: 15px;
+	border-color: transparent;
+	height: 34vh;
+	width: 44vw;
+}
+
+.bottomFeatured {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background: url(assets/4.png);
+	background-size: cover;
+	border-radius: 15px;
+	border-color: transparent;
+	height: 53vh;
+	width: 44vw;
+}
+
+.cardName {
+	font-size: 24px;
+	margin: 0 0 10px 30px;
+}
+
+.cardDesc {
+	width: 21.25vw;
+	font-size: 16px;
+	margin: 0 0 10px 30px;
+}
+
+.cardButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	font-family: "Nunito Sans";
+	background: #F0F0F0;
+	border-radius: 10px;
+	border-color: transparent;
+	color: black;
+	height: 40px;
+	width: 100px;
+	margin: 0 0 30px 30px;
+}
+
+.leftFooter {
+	margin: 0 0 0 20px;
+	height: auto;
+	width: auto;
+}
+
+.centerFooter {
+	height: auto;
+	width: auto;
+}
+
+.rightFooter {
+	margin: 0 20px 0 0;
+	height: auto;
+	width: auto;
+}
+
+.logo {
+	height: 60px;
+	width: auto;
+}
+
+.sub {
+	font-size: 36px;
+	color: #F0F0F0;
+	width: 100vw;
+}
+
+.categories {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: auto;
+	width: 100vw;
+	margin: 0 0 32px;
+}
+
+.catList {
+	display: flex;
+	justify-content: space-around;
+	height: auto;
+	width: 55vw;
+}
+
+.catColumn {
+	display: flex;
+	flex-direction: column;
+	width: 25vw;
+}
+
+.catName {
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 900;
+	color: #F0F0F0;
+	margin: 0;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: auto;
+	width: 100vw;
+}
+
+.card {
+	cursor: pointer;
+	position: relative;
+	right: 0;
+	background: white;
+	border-radius: 30px 30px 20px 20px;
+	border-color: transparent;
+	height: 360px;
+	width: 260px;
+	margin: 15px 30px;
+	transition: 0.5s;
+}
+
+.card:hover {
+	transform: scale(1.1)
+}
+
+.cardHead {
+	background: gray;
+	background-size: cover;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-color: transparent;
+	height: 100px;
+	width: 260px;
+}
+
+.cardTitle,
+.cardText {
+	width: 220px;
+}
+
+.cardTitle {
+	font-size: 24px;
+	color: black;
+	margin: 10px 20px 5px 20px;
+}
+
+.cardText {
+	overflow: hidden;
+	height: auto;
+	max-height: 180px;
+	font-size: 16px;
+	color: black;
+	margin: 0 20px;
+}
+
+.category {
+	color: black;
+	font-size: 16px;
+	background: white;
+	height: auto;
+	width: auto;
+}
+
+.mainBelt {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: 960px;
+}
+
+.overImage {
+	z-index: -2;
+	position: absolute;
+	background: url(assets/2.png);
+	background-size: auto 90vh;
+	background-position: center top;
+	border-radius: 15px;
+	border-color: transparent;
+	height: 50vh;
+	width: 44vw;
+	transition: 0.25s;
+	transition-timing-function: ease-out;
+}
+
+.slider {
+	z-index: -1;
+	position: absolute;
+	width: 44vw;
+	height: auto;
+	transform: translateY(47.5vh);
+	transition: 0.25s;
+	transition-timing-function: ease-out;
+}
+
+@media screen and (max-width: 1480px) {
+
+	.mainBelt {
+		width: 640px;
+	}
+
+	.cards {
+		width: 320px;
+	}
+
+	.rightCenter {
+		display: none;
+	}
+	
+}
+
+@media screen and (max-width: 920px) {
+
+	.catList {
+		width: 100vw;
+	}
+
+	.mainBelt,
+	.cards {
+		width: 320px;
+	}
+
+	.rightCenter {
+		display: none;
+	}
+
+	.smallTitle,
+	.bigTitle,
+	.leftCenter,
+	.centerBar,
+	.leftFeatured,
+	.rightFeatured,
+	.topFeatured,
+	.bottomFeatured,
+	.overImage,
+	.slider {
+		width: 90vw;
+	}
+
+	.buttonBar {
+		width: 260px;
+	}
+
+	.topBar {
+		display: flex;
+		justify-content: center;
+	}
+
+	.bigTitle {
+		font-size: 36px;
+	}
+
+	.smallTitle {
+		font-size: 16px;
+	}
+	
+	.leftFeatured,
+	.overImage {
+		margin: 0 0 20px 0;
+	}
+
+	.featured {
+		height: auto;
+		flex-direction: column;
+	}
+
+	.cardName,
+	.cardDesc,
+	.cardButton {
+		margin: 0 0 10px 10px;
+	}
+
+	.cardDesc {
+		width: 85vw;
+	}
+	
+	.catName {
+		font-size: 12px;
+		padding: 0 0 5px;
+	}
+
+}
