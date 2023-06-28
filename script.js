@@ -6,7 +6,7 @@ var originDest = document.querySelector(".mainBelt");
 var s1n = 1;
 
 function main() {
-	xhr.open("GET", "http://127.0.0.1:5000/items");
+	xhr.open("GET", "https://api.discotek.net/items");
 	xhr.send();
 	xhr.responseType = "json";
 	xhr.onload = () => {
