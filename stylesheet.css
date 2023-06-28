@@ -432,6 +432,14 @@ footer {
 }
 
 @media screen and (max-width: 1480px) {
+	
+	.bigTitle {
+		font-size: 32px;
+	}
+	
+	.smallTitle {
+		font-size: 16px;
+	}
 
 	.mainBelt {
 		width: 640px;
